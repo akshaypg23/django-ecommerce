@@ -1,15 +1,13 @@
 {
     "builds": [{
-        "src": "django-ecommerce/wsgi.py
-",
+        "src": "django-ecommerce/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "django-ecommerce/wsgi.py
-"
+            "dest": "django-ecommerce/wsgi.py"
         }
     ]
 }
